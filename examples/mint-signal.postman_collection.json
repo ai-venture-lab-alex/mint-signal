@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "Mint Signal Solana pilot",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Free finalized mint and freeze authority observations. Explore capacity needs at https://mint-signal.welcomingcoyote.chatgpt.site/pilot."
+  },
+  "item": [
+    {
+      "name": "Check Wrapped SOL",
+      "request": {
+        "method": "GET",
+        "url": "https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/So11111111111111111111111111111111111111112"
+      }
+    },
+    {
+      "name": "Check USDC",
+      "request": {
+        "method": "GET",
+        "url": "https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      }
+    },
+    {
+      "name": "API status",
+      "request": {
+        "method": "GET",
+        "url": "https://mint-signal.welcomingcoyote.chatgpt.site/health"
+      }
+    }
+  ]
+}
