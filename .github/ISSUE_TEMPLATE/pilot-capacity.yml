@@ -30,7 +30,9 @@ body:
       label: Would you consider a higher-limit tier at $5 per month?
       options:
         - "Yes, if it covers my workload"
-        - "It depends on coverage"
+        - "Possibly, depending on coverage or reliability"
+        - "I would prefer pay-as-you-go"
+        - "I need a higher limit, but $5/month is above my budget"
         - "No, I only need the free pilot"
     validations:
       required: true
