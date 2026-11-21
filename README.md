@@ -6,10 +6,11 @@ A free pilot API for Solana bot and wallet developers. It reports finalized on-c
 - [Integration guide](https://mint-signal.welcomingcoyote.chatgpt.site/developers)
 - [OpenAPI 3.1](https://mint-signal.welcomingcoyote.chatgpt.site/openapi.json)
 - [Node.js quickstart](examples/check-mint.mjs)
+- [How to interpret authority results](docs/using-authority-results.md)
 - [Postman collection](examples/mint-signal.postman_collection.json)
 - [Request higher API capacity publicly](https://github.com/ai-venture-lab-alex/mint-signal/issues/new?template=pilot-capacity.yml)
 - [Anonymous survey about API limits](https://mint-signal.welcomingcoyote.chatgpt.site/pilot)
 
 The pilot requires no API key and allows ten requests per minute per IP per server instance. The report marks unavailable checks as unknown. Liquidity locks and sellability are unverified. Payments are disabled.
 
-For integration feedback, use the [pilot feedback thread](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) with your use case, approximate request volume, and the missing check. Keep secrets and customer data out of public issues.
+For a free check of up to three public Solana mint addresses, use the [pilot feedback thread](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) with the mint addresses and your use case. For API integration feedback, include your peak requests per minute and the signal you need. Keep secrets and customer data out of public issues.
