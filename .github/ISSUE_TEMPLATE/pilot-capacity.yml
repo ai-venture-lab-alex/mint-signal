@@ -1,0 +1,36 @@
+name: Pilot capacity request
+description: Tell Mint Signal what API capacity your integration needs.
+title: "[Pilot capacity] "
+body:
+  - type: markdown
+    attributes:
+      value: This is a public request for discussion. The pilot is free and payments are disabled. Please omit secrets and client data.
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Integration use case
+      description: What are you building and where would mint or freeze authority checks fit?
+    validations:
+      required: true
+  - type: dropdown
+    id: volume
+    attributes:
+      label: Estimated requests per minute
+      options:
+        - "Up to 10"
+        - "11–50"
+        - "51–200"
+        - "201+"
+        - "Unsure"
+    validations:
+      required: true
+  - type: dropdown
+    id: price
+    attributes:
+      label: Would you consider a higher-limit tier at $5 per month?
+      options:
+        - "Yes, if it covers my workload"
+        - "It depends on coverage"
+        - "No, I only need the free pilot"
+    validations:
+      required: true
