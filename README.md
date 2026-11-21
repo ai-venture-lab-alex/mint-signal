@@ -7,6 +7,7 @@ A free pilot API for Solana bot and wallet developers. It reports finalized on-c
 - [OpenAPI 3.1](https://mint-signal.welcomingcoyote.chatgpt.site/openapi.json)
 - [Node.js quickstart](examples/check-mint.mjs)
 - [How to interpret authority results](docs/using-authority-results.md)
+- [n8n workflow JSON](examples/n8n-mint-check.json)
 - [Postman collection](examples/mint-signal.postman_collection.json)
 - [Request higher API capacity publicly](https://github.com/ai-venture-lab-alex/mint-signal/issues/new?template=pilot-capacity.yml)
 - [Anonymous survey about API limits](https://mint-signal.welcomingcoyote.chatgpt.site/pilot)
