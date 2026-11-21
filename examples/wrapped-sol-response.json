@@ -1,0 +1,31 @@
+{
+  "schema": "mint-signal.preview.v1",
+  "network": "mainnet-beta",
+  "mint": "So11111111111111111111111111111111111111112",
+  "slot": 472013880,
+  "observedAt": "2026-11-21T05:00:11.861Z",
+  "checks": {
+    "mintAuthority": {
+      "status": "observed",
+      "value": null
+    },
+    "freezeAuthority": {
+      "status": "observed",
+      "value": null
+    },
+    "liquidityLocks": {
+      "status": "unknown"
+    },
+    "sellability": {
+      "status": "unknown"
+    },
+    "beneficialOwnership": {
+      "status": "unknown"
+    },
+    "largestTokenAccount": {
+      "status": "unknown"
+    }
+  },
+  "flags": [],
+  "verdict": "undetermined"
+}
