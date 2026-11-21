@@ -36,3 +36,10 @@ body:
         - "No, I only need the free pilot"
     validations:
       required: true
+  - type: textarea
+    id: switching-criteria
+    attributes:
+      label: What would make you switch?
+      description: If you already use an API or Solana RPC, tell us which limitation matters most and what outcome would justify paying.
+    validations:
+      required: false
