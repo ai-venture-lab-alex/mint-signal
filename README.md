@@ -25,3 +25,9 @@ curl -fsS --max-time 15 https://mint-signal.welcomingcoyote.chatgpt.site/v1/prev
 Replace the final path segment with your public mint address. The JSON includes the finalized slot, authority flags, and checks with unknown results.
 
 For a free check of up to three public Solana mint addresses, use the [pilot feedback thread](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) with the mint addresses and your use case. For API integration feedback, include your peak requests per minute and the signal you need. Keep secrets and customer data out of public issues.
+
+### Try the pilot in n8n
+
+Download the [workflow JSON](examples/n8n-mint-check.json), import it into n8n, and run it manually. Replace the last URL segment in **Read token permissions** to check a different public Solana mint. The workflow was verified using n8n 2.48.7 with a temporary workflow ID for CLI execution. It reads the API and requires no credentials.
+
+If you use this in a workflow, [tell us what it checks and your peak requests per minute](https://github.com/ai-venture-lab-alex/mint-signal/issues/1).
