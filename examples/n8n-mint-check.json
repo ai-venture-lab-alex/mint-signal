@@ -1,0 +1,31 @@
+{
+  "name": "Check Solana mint permissions with Mint Signal",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "6e8d7847-e9b4-4f31-bacc-ca5e8fc508da",
+      "name": "When clicking Execute workflow",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "url": "https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/So11111111111111111111111111111111111111112",
+        "options": { "timeout": 15000 }
+      },
+      "id": "4b8d6129-e12d-4e28-adb7-a8f9017b815e",
+      "name": "Read token permissions",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [260, 0]
+    }
+  ],
+  "connections": {
+    "When clicking Execute workflow": {
+      "main": [[{ "node": "Read token permissions", "type": "main", "index": 0 }]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" }
+}
