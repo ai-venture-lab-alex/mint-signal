@@ -39,3 +39,7 @@ On 22 November 2026 at 12:57:38 UTC the [USDT mint preview](https://mint-signal.
 ## Build a workflow with three outcomes
 
 When testing with the [n8n example](../examples/n8n-mint-check.json), keep these outcomes distinct: an authority is present, the checked authority is absent, or the check is unavailable (for example, after HTTP 503). Include the observed slot in alerts based on a completed check. If you are evaluating this for a workflow, [bring one public mint to the free pilot](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) and describe which outcome should trigger your alert.
+
+## Combining mint authorities with pool data
+
+Use the mint address for the authority check and keep its finalized slot with the result. Read liquidity and LP balances from the relevant pool separately, and keep the pool address and observation time with those values. A mint authority report can be evaluated on its own while pool data is unavailable. If you're prototyping this integration, [share one public mint and the fields your wallet or indexer needs](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) for a free pilot.
