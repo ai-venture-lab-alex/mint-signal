@@ -31,3 +31,7 @@ The preview can return HTTP 503 with `rpc_unavailable` and a `Retry-After` heade
 An issuer may retain freeze authority as part of its operating policy. Show the observed authority and slot to the reviewer, who can compare them with the issuer's published policy. For Token-2022 mints, review extensions such as transfer hooks separately. See [Solana's exchange integration guide](https://solana.com/docs/defi/exchange).
 
 If your team reviews Solana stablecoin mints, bring one public mint and the review step you want to automate to the [free pilot](https://github.com/ai-venture-lab-alex/mint-signal/issues/1). For a higher-limit API, optionally tell us your daily volume, peak requests per second, and whether $5/month would fit your budget. This is a pricing question. The pilot is free.
+
+### USDT mint authority example
+
+On 22 November 2026 at 12:57:38 UTC the [USDT mint preview](https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB) reported `freeze_authority_active` at finalized slot `472549014`. For a current check, run the preview again and record the returned slot. To count freeze or thaw events, use a transaction history source separately. If you're validating an indexer, you can [request a free check of one public mint](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) and share what you need to verify.
