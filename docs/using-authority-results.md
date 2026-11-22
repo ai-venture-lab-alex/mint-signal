@@ -35,3 +35,7 @@ If your team reviews Solana stablecoin mints, bring one public mint and the revi
 ### USDT mint authority example
 
 On 22 November 2026 at 12:57:38 UTC the [USDT mint preview](https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB) reported `freeze_authority_active` at finalized slot `472549014`. For a current check, run the preview again and record the returned slot. To count freeze or thaw events, use a transaction history source separately. If you're validating an indexer, you can [request a free check of one public mint](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) and share what you need to verify.
+
+## Build a workflow with three outcomes
+
+When testing with the [n8n example](../examples/n8n-mint-check.json), keep these outcomes distinct: an authority is present, the checked authority is absent, or the check is unavailable (for example, after HTTP 503). Include the observed slot in alerts based on a completed check. If you are evaluating this for a workflow, [bring one public mint to the free pilot](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) and describe which outcome should trigger your alert.
