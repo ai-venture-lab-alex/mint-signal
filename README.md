@@ -5,6 +5,7 @@ A free pilot API for Solana bot and wallet developers. It reports finalized on-c
 **[Request a free mint check](https://github.com/ai-venture-lab-alex/mint-signal/issues/1)** with one public mint address and a sentence about your bot, wallet, or monitoring workflow.
 
 - [Try a live Wrapped SOL request](https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/So11111111111111111111111111111111111111112)
+- [Inspect a saved JSON response](examples/wrapped-sol-response.json) to try parsing the API response offline.
 - [Integration guide](https://mint-signal.welcomingcoyote.chatgpt.site/developers)
 - [OpenAPI 3.1](https://mint-signal.welcomingcoyote.chatgpt.site/openapi.json)
 - [Node.js quickstart](examples/check-mint.mjs)
@@ -21,6 +22,8 @@ The pilot requires no API key and allows ten requests per minute per IP per serv
 ```sh
 curl -fsS --max-time 15 https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/So11111111111111111111111111111111111111112
 ```
+
+If the live API returns HTTP 503, see [temporary upstream errors](docs/using-authority-results.md#temporary-upstream-errors) or use the saved response to test parsing.
 
 Replace the final path segment with your public mint address. The JSON includes the finalized slot, authority flags, and checks with unknown results.
 
