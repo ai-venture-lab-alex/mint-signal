@@ -2,7 +2,9 @@
 
 A free pilot API for Solana bot and wallet developers. It reports finalized on-chain observations about who can mint a token or freeze its token accounts.
 
-**[Request a free mint check](https://github.com/ai-venture-lab-alex/mint-signal/issues/1)** with one public mint address and a sentence about your bot, wallet, or monitoring workflow.
+**[Request a free mint check](https://github.com/ai-venture-lab-alex/mint-signal/issues/1)** with one public mint address and the step in your bot, wallet, or monitoring workflow where you need the result.
+
+If you're evaluating the API for a team, [share your expected daily volume and peak request rate](https://github.com/ai-venture-lab-alex/mint-signal/issues/new?template=pilot-capacity.yml). Would a higher limit be worth $5/month for that workload? The pilot is free and the $5 price is for research.
 
 - [Try a live Wrapped SOL request](https://mint-signal.welcomingcoyote.chatgpt.site/v1/preview/So11111111111111111111111111111111111111112)
 - [Inspect a saved JSON response](examples/wrapped-sol-response.json) to try parsing the API response offline.
