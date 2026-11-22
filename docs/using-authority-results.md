@@ -4,6 +4,7 @@ Start with the [live developer example](https://mint-signal.welcomingcoyote.chat
 
 - **Mint authority present** means the mint still has an authority that can issue additional supply.
 - **Freeze authority present** means the mint still has an authority that can freeze supported token accounts.
+- **Current freeze status of a holder account** requires checking that specific token account. The mint-level response only observes whether the mint has a freeze authority.
 - **Both absent** means those two permissions are absent in the observed mint state. Liquidity, holder concentration, and other program controls require separate checks.
 - **No successful response** means the check is unavailable. Keep that state separate from completed checks in your UI or agent workflow.
 
