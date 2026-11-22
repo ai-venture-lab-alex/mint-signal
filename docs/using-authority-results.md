@@ -25,3 +25,9 @@ For the free pilot, share the agent's use case and expected peak requests per mi
 ## Temporary upstream errors
 
 The preview can return HTTP 503 with `rpc_unavailable` and a `Retry-After` header. Keep the check unavailable in your workflow. If you retry, honor the header and bound the number of attempts. The [free pilot thread](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) accepts reports with a public mint, the time, and the HTTP status.
+
+## Reviewing a stablecoin integration
+
+An issuer may retain freeze authority as part of its operating policy. Show the observed authority and slot to the reviewer, who can compare them with the issuer's published policy. For Token-2022 mints, review extensions such as transfer hooks separately. See [Solana's exchange integration guide](https://solana.com/docs/defi/exchange).
+
+If your team reviews Solana stablecoin mints, bring one public mint and the review step you want to automate to the [free pilot](https://github.com/ai-venture-lab-alex/mint-signal/issues/1). For a higher-limit API, optionally tell us your daily volume, peak requests per second, and whether $5/month would fit your budget. This is a pricing question. The pilot is free.
