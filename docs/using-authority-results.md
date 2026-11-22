@@ -20,3 +20,7 @@ Building a bot, wallet, or listing workflow? In the [free pilot thread](https://
 The [OpenAPI document](https://mint-signal.welcomingcoyote.chatgpt.site/openapi.json) describes one read-only operation, `checkSolanaMint`. Pass a public Solana mint address and return the observed slot, authority flags, and unknown checks to the user. If the request fails, report that the check is unavailable. The preview requires no wallet or API key.
 
 For the free pilot, share the agent's use case and expected peak requests per minute in the [pilot thread](https://github.com/ai-venture-lab-alex/mint-signal/issues/1). Tell us which result would need to change the agent's review workflow.
+
+## Temporary upstream errors
+
+The preview can return HTTP 503 with `rpc_unavailable` and a `Retry-After` header. Keep the check unavailable in your workflow. If you retry, honor the header and bound the number of attempts. The [free pilot thread](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) accepts reports with a public mint, the time, and the HTTP status.
