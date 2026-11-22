@@ -5,7 +5,14 @@ if (!mint || !/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(mint)) {
 }
 const base = 'https://mint-signal.welcomingcoyote.chatgpt.site';
 try {
-  const response = await fetch(base + '/v1/preview/' + mint, {signal:AbortSignal.timeout(12000)});
+  const request = () => fetch(base + '/v1/preview/' + mint, {signal:AbortSignal.timeout(12000)});
+  let response = await request();
+  const retryAfter = Number(response.headers.get('retry-after'));
+  if (response.status === 503 && Number.isInteger(retryAfter) && retryAfter >= 1 && retryAfter <= 5) {
+    await response.body?.cancel();
+    await new Promise(resolve => setTimeout(resolve, retryAfter * 1000));
+    response = await request();
+  }
   const report = await response.json();
   if (!response.ok) {
     console.error(JSON.stringify({status:response.status,error:report.error,
