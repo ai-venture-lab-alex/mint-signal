@@ -49,3 +49,7 @@ Use the mint address for the authority check and keep its finalized slot with th
 During token onboarding, keep the mint address, the source of any identity verification, and the observed mint and freeze authorities as separate fields. [Solana's guide to token verification](https://solana.com/docs/tokens/how-to-verify-a-token) describes how explorers resolve token identity. Mint Signal supplies the authority fields and a finalized slot for the mint you provide.
 
 If you are prototyping an onboarding flow, [request a free check](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) with one public mint and the field you would display. If you expect to check many mints, share the expected peak request rate and whether a higher API limit would be useful.
+
+## Adding a filter to a token scanner
+
+Use your existing token feed to discover mint addresses. For one filter, use the Mint Signal response to identify a present mint or freeze authority and keep its finalized slot with the result. If the request fails, mark the filter result as unavailable. [Request a free check of one public mint](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) and tell us which field your scanner needs and the peak number of checks per minute.
