@@ -43,3 +43,9 @@ When testing with the [n8n example](../examples/n8n-mint-check.json), keep these
 ## Combining mint authorities with pool data
 
 Use the mint address for the authority check and keep its finalized slot with the result. Read liquidity and LP balances from the relevant pool separately, and keep the pool address and observation time with those values. A mint authority report can be evaluated on its own while pool data is unavailable. If you're prototyping this integration, [share one public mint and the fields your wallet or indexer needs](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) for a free pilot.
+
+## Wallet token onboarding
+
+During token onboarding, keep the mint address, the source of any identity verification, and the observed mint and freeze authorities as separate fields. [Solana's guide to token verification](https://solana.com/docs/tokens/how-to-verify-a-token) describes how explorers resolve token identity. Mint Signal supplies the authority fields and a finalized slot for the mint you provide.
+
+If you are prototyping an onboarding flow, [request a free check](https://github.com/ai-venture-lab-alex/mint-signal/issues/1) with one public mint and the field you would display. If you expect to check many mints, share the expected peak request rate and whether a higher API limit would be useful.
